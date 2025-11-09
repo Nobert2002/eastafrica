@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="East African Youth Medical Charity Program – Providing essential healthcare, education, and hope to underserved youth in Kenya, Tanzania, Uganda, and beyond.">
+    <meta name="keywords" content="East Africa, youth health, medical charity, nonprofit, donation, mobile clinics">
+    <meta name="author" content="East African Youth Medical Charity Program">
+
+    <!-- Title -->
+    <title>East African Youth Medical Charity Program</title>
+
+    <!-- Favicon (replace with your own) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts (Optional – remove if you prefer system fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Inline Styles -->
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            font-family: 'Open Sans', Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background: #f9f9f9;
+        }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; margin-top: 0; }
+        a { color: inherit; text-decoration: none; }
+
+        /* Layout */
+        header { 
+            background: linear-gradient(135deg, #228B22, #32CD32); 
+            color: white; 
+            text-align: center; 
+            padding: 2rem 1rem; 
+        }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin: 0.5rem 0 0; font-size: 1.1rem; }
+
+        nav { 
+            background: #90EE90; 
+            padding: 0.75rem 0; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a { 
+            color: #333; 
+            margin: 0 1rem; 
+            font-weight: 600; 
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #FF4500; }
+
+        main { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+
+        section { 
+            padding: 3rem 1.5rem; 
+            margin-bottom: 2rem; 
+            background: white; 
+            border-radius: 10px; 
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('https://images.unsplash.com/photo-1593113598332-cd0e7b9b7b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            position: relative;
+            border-radius: 0;
+            padding: 6rem 1.5rem;
+        }
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            border-radius: inherit;
+        }
+        #hero > div { position: relative; z-index: 1; }
+        #hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .cta-button {
+            display: inline-block;
+            background: #FF4500;
+            color: white;
+            padding: 0.9rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: background 0.3s;
+        }
+        .cta-button:hover { background: #e03e00; }
+
+        /* Programs Grid */
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .card {
+            background: #f0f8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card h3 { color: #228B22; }
+
+        /* Impact */
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+        .stat-item { text-align: center; }
+        .stat-item span { display: block; font-size: 2rem; color: #228B22; }
+
+        /* Contact Form */
+        form { max-width: 500px; margin: 2rem auto 0; }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font: inherit;
+        }
+        button.cta-button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: #eee;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+        footer a { color: #90EE90; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            #hero h2 { font-size: 2rem; }
+            nav a { margin: 0 0.5rem; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>East African Youth Medical Charity Program</h1>
+        <p>Empowering the health and future of East Africa’s youth</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div>
+            <h2>Transforming Lives Through Accessible Medical Care</h2>
+            <p>Your support brings hope, health, and opportunity to thousands of young people in need.</p>
+            <a href="#donate" class="cta-button">Donate Now</a>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The <strong>East African Youth Medical Charity Program</strong> is a nonprofit organization dedicated to delivering essential medical services, health education, and preventive care to underserved youth across Kenya, Tanzania, Uganda, Rwanda, and Burundi.</p>
+            <p>Founded in <strong>2020</strong>, we operate mobile clinics, train community health workers, and respond to emergencies — all with a focus on long-term, sustainable impact.</p>
+        </section>
+
+        <!-- Programs -->
+        <section id="programs">
+            <h2>Our Programs</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Mobile Clinics</h3>
+                    <p>Bringing doctors, vaccines, and medicine directly to remote villages.</p>
+                </div>
+                <div class="card">
+                    <h3>Youth Health Education</h3>
+                    <p>Workshops on nutrition, hygiene, mental health, and disease prevention.</p>
+                </div>
+                <div class="card">
+                    <h3>Emergency Response</h3>
+                    <p>Rapid aid during outbreaks, floods, and refugee crises.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact -->
+        <section id="impact">
+            <h2>Our Impact</h2>
+            <p>Real change, measurable results:</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span>12,500+</span>
+                    Children Vaccinated
+                </div>
+                <div class="stat-item">
+                    <span>48</span>
+                    Mobile Clinics Deployed
+                </div>
+                <div class="stat-item">
+                    <span>5</span>
+                    Countries Served
+                </div>
+            </div>
+            <blockquote style="margin: 2rem 0; font-style: italic; color: #555;">
+                “Thanks to your clinic, my son can now walk again after malaria treatment.” 
+                <br><strong>— Mama Fatuma, Dar es Salaam</strong>
+            </blockquote>
+        </section>
+
+        <!-- Donate -->
+        <section id="donate">
+            <h2>Support Our Mission</h2>
+            <p>Every dollar makes a difference:</p>
+            <ul>
+                <li><strong>$25</strong> → Full health check-up for one child</li>
+                <li><strong>$50</strong> → Vaccines for 10 children</li>
+                <li><strong>$100</strong> → Fund one day of a mobile clinic</li>
+            </ul>
+            <p style="text-align: center;">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=REPLACE_WITH_YOUR_ID" target="_blank" class="cta-button">
+                    Donate Securely via PayPal
+                </a>
+            </p>
+            <p style="font-size: 0.9rem; text-align: center;">
+                Or use <a href="https://gofundme.com" target="_blank">GoFundMe</a>, <a href="https://stripe.com" target="_blank">Stripe</a>, or bank transfer.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> <a href="mailto:info@eaymcp.org">info@eaymcp.org</a> | 
+               <strong>Phone:</strong> +256756879648 | 
+               <strong>X (Twitter):</strong> <a href="https://x.com/EAYMCP" target="_blank">@EAYMCP</a></p>
+
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <p style="font-size: 0.8rem; margin-top: 1rem;">
+                <em>This form uses Formspree (free). Replace the action URL with your own or connect to Netlify/Google Forms.</em>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 East African Youth Medical Charity Program. All rights reserved.</p>
+        <p>
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a> | 
+            <a href="mailto:info@eaymcp.org">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
